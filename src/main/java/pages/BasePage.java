@@ -8,6 +8,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
+    /**
+    * Region Variables
+    */
     protected static WebDriver driver;
     private static WebDriverWait wait;
     private static Actions action;
@@ -21,10 +24,17 @@ public class BasePage {
         wait = new WebDriverWait(driver,10);
     }
 
+    /**
+    * Region Constructor
+    */
     public BasePage(WebDriver driver){
         BasePage.driver = driver;
         wait = new WebDriverWait(driver,10);
     }
+
+    /**
+    * Region Methods
+    */
 
     public static void navigateTo(String url){
         driver.get("https://www.amazon.com/");
@@ -34,6 +44,11 @@ public class BasePage {
         driver.quit();
     }
 
+    /**
+    * Get a webelement along applying <mark>wait</mark> to ensure element is available
+    * @param locator xpath locator
+    * @return WebElement will be <b>null</b> if <b>locator doesn't match to an actual element from form</b>
+    */
     private WebElement Find(String locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
