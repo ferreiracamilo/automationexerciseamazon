@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import pages.BasePage;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -18,6 +19,6 @@ import cucumber.api.junit.Cucumber;
 public class Runner{
     @AfterClass
     public static void cleanDriver(){
-        //close method to be called
+        BasePage.closeBrowser();
     }
 }

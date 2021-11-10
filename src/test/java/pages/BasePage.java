@@ -19,10 +19,9 @@ public class BasePage {
     //private static Actions action;
 
     static {
-        // System.setProperty("webdriver.chrome.driver", "D:/Workspace/vscode-workspace/seleniumCucumberJavaPato/src/test/resources/files/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/auxfiles/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/Workspace/vscode-workspace/seleniumCucumberJavaPato/src/test/resources/auxfiles/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/auxfiles/chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
-        // chromeOptions.addArguments("ignore-certificate-errors"); //to ignore HTTPS lack certificate
         driver = new ChromeDriver (chromeOptions);
         wait = new WebDriverWait(driver,10);
     }
