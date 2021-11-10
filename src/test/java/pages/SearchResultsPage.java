@@ -24,7 +24,7 @@ public class SearchResultsPage extends BasePage{
     }
 
     public void clickOnItem(String numberItem){
-        String itemToClick = itemFound.replace($NumberItem, numberItem);
+        String itemToClick = itemFound.replace("$NumberItem", numberItem);
         Find(itemToClick).click();
     }
 

@@ -19,6 +19,6 @@ public class HomePage extends BasePage{
 
     public void doSearchByCriteria(String textToWrite){
         write(searchBoxInput, textToWrite);
-        Find(locator).submit();
+        Find(searchBoxInput).submit();
     }
 }

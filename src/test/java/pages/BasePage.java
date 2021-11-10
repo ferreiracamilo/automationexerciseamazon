@@ -1,8 +1,12 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,7 +17,7 @@ public class BasePage {
     */
     protected static WebDriver driver;
     private static WebDriverWait wait;
-    private static Actions action;
+    //private static Actions action;
 
     static {
         // System.setProperty("webdriver.chrome.driver", "D:/Workspace/vscode-workspace/seleniumCucumberJavaPato/src/test/resources/files/chromedriver.exe");
@@ -49,7 +53,7 @@ public class BasePage {
     * @param locator xpath locator
     * @return WebElement will be <b>null</b> if <b>locator doesn't match to an actual element from form</b>
     */
-    private WebElement Find(String locator){
+    protected WebElement Find(String locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 

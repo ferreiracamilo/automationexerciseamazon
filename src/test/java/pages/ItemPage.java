@@ -1,7 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
-
 public class ItemPage extends BasePage{
     /**
     * Region Variables
@@ -28,7 +26,7 @@ public class ItemPage extends BasePage{
         Find(addToCartBtn).click();
     }
 
-    public void getQTYcart(){
-        Find(qtyItemCart).getText();
+    public String getQTYcart(){
+        return Find(qtyItemCart).getText();
     }
 }
