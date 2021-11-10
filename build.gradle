@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group {InterviewClassicExerciseAmazon}
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = '10'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '4.2.0'
+
+    // https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter
+    implementation group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version: '1.0.7'
+
+}
+
+test{
+    systemProperty "cucumberOptions", System.getProperty("cucumber.options")
+    //Previous line was update based on following due to issues not recognizing tags -> systemProperty "cucumber.options", System.getProperty("cucumber.options")
+    //In terminal write specifying the tag or tags -> gradle test -DcucumberOptions="--tags @Test
+    //In case of multiple tags -> gradle test -DcucumberOptions="--tags @Grid, --tags Grud"
+    //If defining properties is used with . execution in terminal would change to -> gradle test -Dcucumber.options="--tags @Grid"
+}
