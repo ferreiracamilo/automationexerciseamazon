@@ -3,6 +3,7 @@ package steps;
 import org.junit.Assert;
 
 import cucumber.api.java.en.*;
+import pages.BasePage;
 import pages.HomePage;
 import pages.ItemPage;
 import pages.SearchResultsPage;
@@ -14,7 +15,7 @@ public class AmazonSearchNCartSteps {
 
     @Given("^the user navigates to www.amazon.com$")
     public void navigateToAmazon(){
-        homepage.navigateTo("https://www.amazon.com/");
+        BasePage.navigateTo("https://www.amazon.com/");
     }
 
     @And("^searches for (.+)$")
@@ -37,6 +38,7 @@ public class AmazonSearchNCartSteps {
         Assert.assertNotEquals(itemPage.getAddToCartSize(), 0); //Verify size of driver find elements of "Add to cart" is greather than zero (defect value)
         itemPage.addItemToCart(); //Add item to cart
         Assert.assertNotEquals(itemPage.getQTYcart(), 0); //Verify the number within shopping cart icon is different than zero (defect value)
-        //Assert.assertEquals("Texto que esperamos", google.firstResult());
+
+        //HARD ASSERTS were used based on the fact that is there's no actual "Add to cart" button is not needed to continue remaining actions
     }
 }
