@@ -2,34 +2,9 @@
 <testsuite name="runner.Runner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="AMD-GAMER-DESKT" time="0.0">
   <properties/>
   <system-out><![CDATA[
-Failed scenarios:
-src/test/resources/features/AmazonSearchNCart.feature:13 # As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart.
-src/test/resources/features/AmazonSearchNCart.feature:14 # As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart.
-
-2 Scenarios (2 failed)
-10 Steps (2 failed, 8 passed)
-0m30,863s
-
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='add-to-cart-button'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AMD-GAMER-DESKT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\camil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5416fa1fcd15a648f69571b09faa1ff4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pages.BasePage.Find(BasePage.java:57)
-	at pages.ItemPage.addItemToCart(ItemPage.java:26)
-	at steps.AmazonSearchNCartSteps.verifyRules(AmazonSearchNCartSteps.java:39)
-	at ?.assert that the item would be available for purchase(src/test/resources/features/AmazonSearchNCart.feature:9)
-
-java.lang.AssertionError: Values should be different. Actual: 0
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failEquals(Assert.java:185)
-	at org.junit.Assert.assertNotEquals(Assert.java:199)
-	at org.junit.Assert.assertNotEquals(Assert.java:211)
-	at steps.AmazonSearchNCartSteps.verifyRules(AmazonSearchNCartSteps.java:38)
-	at ?.assert that the item would be available for purchase(src/test/resources/features/AmazonSearchNCart.feature:9)
+2 Scenarios (2 passed)
+10 Steps (10 passed)
+0m20,132s
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

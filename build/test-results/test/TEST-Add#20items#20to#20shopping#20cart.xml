@@ -1,37 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Add items to shopping cart" tests="2" skipped="0" failures="2" errors="0" timestamp="2021-11-11T03:14:59" hostname="AMD-GAMER-DESKT" time="30.72">
+<testsuite name="Add items to shopping cart" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-11-11T03:27:25" hostname="AMD-GAMER-DESKT" time="20.01">
   <properties/>
-  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="22.864">
-    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='add-to-cart-button'] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AMD-GAMER-DESKT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\camil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5416fa1fcd15a648f69571b09faa1ff4" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='add-to-cart-button'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AMD-GAMER-DESKT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\camil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5416fa1fcd15a648f69571b09faa1ff4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pages.BasePage.Find(BasePage.java:57)
-	at pages.ItemPage.addItemToCart(ItemPage.java:26)
-	at steps.AmazonSearchNCartSteps.verifyRules(AmazonSearchNCartSteps.java:39)
-	at ✽.assert that the item would be available for purchase(src/test/resources/features/AmazonSearchNCart.feature:9)
-</failure>
-  </testcase>
-  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="7.855">
-    <failure message="java.lang.AssertionError: Values should be different. Actual: 0" type="java.lang.AssertionError">java.lang.AssertionError: Values should be different. Actual: 0
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failEquals(Assert.java:185)
-	at org.junit.Assert.assertNotEquals(Assert.java:199)
-	at org.junit.Assert.assertNotEquals(Assert.java:211)
-	at steps.AmazonSearchNCartSteps.verifyRules(AmazonSearchNCartSteps.java:38)
-	at ✽.assert that the item would be available for purchase(src/test/resources/features/AmazonSearchNCart.feature:9)
-</failure>
-  </testcase>
+  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="12.354"/>
+  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="7.655"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 20041
+  <system-err><![CDATA[Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 24674
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 11, 2021 12:15:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 11, 2021 12:27:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

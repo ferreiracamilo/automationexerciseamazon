@@ -61,7 +61,7 @@ public class BasePage {
     }
 
     public void moveNclick(String locator){
-        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement ele = Find(locator);
         js.executeScript("arguments[0].scrollIntoView();", ele);
         ele.click();

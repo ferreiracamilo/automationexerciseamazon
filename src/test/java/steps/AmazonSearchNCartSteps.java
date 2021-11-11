@@ -36,16 +36,5 @@ public class AmazonSearchNCartSteps {
     @Then("^assert that the item would be available for purchase$")
     public void verifyRules(){
         Assert.assertNotEquals(itemPage.getAddToCartSize(), 0); //Verify size of driver find elements of "Add to cart" is greather than zero (defect value)
-        itemPage.addItemToCart(); //Add item to cart
-        System.out.println("Ya hice click en el carrito");
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        // Assert.assertNotEquals(itemPage.getQTYcart(), 0); //Verify the number within shopping cart icon is different than zero (defect value)
-
-        //HARD ASSERTS were used based on the fact that is there's no actual "Add to cart" button is not needed to continue remaining actions
     }
 }

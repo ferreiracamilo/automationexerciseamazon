@@ -21,12 +21,4 @@ public class ItemPage extends BasePage{
     public int getAddToCartSize(){
         return getAllElements(addToCartBtn).size();
     }
-
-    public void addItemToCart(){
-        Find(addToCartBtn).click();
-    }
-
-    public String getQTYcart(){
-        return Find(qtyItemCart).getText();
-    }
 }

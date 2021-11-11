@@ -11,3 +11,4 @@ Scenario Outline: As a Customer when I search for Alexa, I want to see if the th
     Examples:
         | ItemName | PageNumber | ItemNumber |
         | Alexa    | 2          | 3          |
+        | Kindle   | 3          | 5          |
