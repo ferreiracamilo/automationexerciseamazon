@@ -5,9 +5,9 @@ Consist on accessing amazon, input a item into search bar, navigate to "X" page,
 ## Knowledge/Tech Stack implemented
 
 1.Selenium
-2.Cucumber
-3.Page Object Model
-4.Gradle
-5.Java
-6.VS Code
-7.Extent reports
+<br>2.Cucumber
+<br>3.Page Object Model
+<br>4.Gradle
+<br>5.Java
+<br>6.VS Code
+<br>7.Extent reports
