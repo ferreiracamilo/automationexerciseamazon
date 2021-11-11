@@ -8,7 +8,7 @@ runner/Runner.java
  runner.Runner
 pages/ItemPage.java
  pages.ItemPage
-steps/AmazonSearchNCartSteps.java
- steps.AmazonSearchNCartSteps
 pages/SearchResultsPage.java
  pages.SearchResultsPage
+steps/AmazonSearchNCartSteps.java
+ steps.AmazonSearchNCartSteps

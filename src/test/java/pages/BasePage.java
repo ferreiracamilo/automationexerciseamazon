@@ -3,6 +3,7 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,10 +20,10 @@ public class BasePage {
     //private static Actions action;
 
     static {
-        System.setProperty("webdriver.chrome.driver", "D:/Workspace/vscode-workspace/seleniumCucumberJavaPato/src/test/resources/auxfiles/chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/auxfiles/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/auxfiles/chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver (chromeOptions);
+        driver.manage().window().maximize();
         wait = new WebDriverWait(driver,10);
     }
 
@@ -31,6 +32,7 @@ public class BasePage {
     */
     public BasePage(WebDriver driver){
         BasePage.driver = driver;
+        //PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver,10);
     }
 
@@ -57,6 +59,13 @@ public class BasePage {
 
     public void clickElement (String locator){
         Find(locator).click();
+    }
+
+    public void moveNclick(String locator){
+        JavascriptExecutor js = (JavascriptExecutor) this.driver;
+        WebElement ele = Find(locator);
+        js.executeScript("arguments[0].scrollIntoView();", ele);
+        ele.click();
     }
 
     public void write (String locator,String textToWrite){
