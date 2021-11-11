@@ -5,7 +5,6 @@ public class ItemPage extends BasePage{
     * Region Variables
     */
     String addToCartBtn = "//input[@id='add-to-cart-button']";
-    String qtyItemCart =  "//div[@id='nav-cart-count-container'] /span[@id='nav-cart-count']";
 
     /**
     * Region Constructor
