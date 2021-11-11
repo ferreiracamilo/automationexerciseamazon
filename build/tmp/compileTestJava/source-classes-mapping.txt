@@ -6,9 +6,9 @@ pages/HomePage.java
  pages.HomePage
 runner/Runner.java
  runner.Runner
-pages/SearchResultsPage.java
- pages.SearchResultsPage
 pages/ItemPage.java
  pages.ItemPage
 steps/AmazonSearchNCartSteps.java
  steps.AmazonSearchNCartSteps
+pages/SearchResultsPage.java
+ pages.SearchResultsPage

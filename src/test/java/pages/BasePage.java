@@ -56,10 +56,6 @@ public class BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
-    public void clickElement (String locator){
-        Find(locator).click();
-    }
-
     public void moveNclick(String locator){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement ele = Find(locator);
@@ -70,14 +66,6 @@ public class BasePage {
     public void write (String locator,String textToWrite){
         Find(locator).clear();
         Find(locator).sendKeys(textToWrite);
-    }
-
-    public String textFromElement (String locator){
-        return Find(locator).getText();
-    }
-
-    public boolean elementIsDisplayed(String locator){
-        return Find(locator).isDisplayed();
     }
 
     public List<WebElement> getAllElements(String locator){

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Add items to shopping cart" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-11-11T03:27:25" hostname="AMD-GAMER-DESKT" time="20.01">
+<testsuite name="Add items to shopping cart" tests="2" skipped="0" failures="1" errors="0" timestamp="2021-11-11T03:38:38" hostname="AMD-GAMER-DESKT" time="21.308">
   <properties/>
-  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="12.354"/>
-  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="7.655"/>
+  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="12.258"/>
+  <testcase name="As a Customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart." classname="Add items to shopping cart" time="9.049">
+    <failure message="java.lang.AssertionError: Values should be different. Actual: 0" type="java.lang.AssertionError">java.lang.AssertionError: Values should be different. Actual: 0
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failEquals(Assert.java:185)
+	at org.junit.Assert.assertNotEquals(Assert.java:199)
+	at org.junit.Assert.assertNotEquals(Assert.java:211)
+	at steps.AmazonSearchNCartSteps.verifyRules(AmazonSearchNCartSteps.java:38)
+	at ✽.assert that the item would be available for purchase(src/test/resources/features/AmazonSearchNCart.feature:9)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 24674
+  <system-err><![CDATA[Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 31513
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 11, 2021 12:27:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 11, 2021 12:38:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
