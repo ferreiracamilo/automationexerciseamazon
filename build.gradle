@@ -29,8 +29,5 @@ dependencies {
 
 test{
     systemProperty "cucumberOptions", System.getProperty("cucumber.options")
-    //Previous line was update based on following due to issues not recognizing tags -> systemProperty "cucumber.options", System.getProperty("cucumber.options")
-    //In terminal write specifying the tag or tags -> gradle test -DcucumberOptions="--tags @Test
-    //In case of multiple tags -> gradle test -DcucumberOptions="--tags @Grid, --tags Grud"
-    //If defining properties is used with . execution in terminal would change to -> gradle test -Dcucumber.options="--tags @Grid"
+    //In terminal write specifying the tag or tags -> gradle test -DcucumberOptions="--tags @Test"
 }
