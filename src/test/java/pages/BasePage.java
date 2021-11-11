@@ -32,7 +32,6 @@ public class BasePage {
     */
     public BasePage(WebDriver driver){
         BasePage.driver = driver;
-        //PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver,10);
     }
 

@@ -25,7 +25,7 @@ public class SearchResultsPage extends BasePage{
 
     public void clickOnItem(String numberItem){
         String innerLocator = itemFound.replace("$NumberItem", numberItem);
-        Find(innerLocator).click();
+        moveNclick(innerLocator);
     }
 
 }

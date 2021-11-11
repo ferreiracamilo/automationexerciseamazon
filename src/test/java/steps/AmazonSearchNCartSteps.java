@@ -25,37 +25,19 @@ public class AmazonSearchNCartSteps {
 
     @And("^navigates to the page (.+)$")
     public void changePageNumber(String pageNumber){
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
         resultsPage.changeToPage(pageNumber);
     }
 
     @And("^selects the item (.+)$")
     public void selectItemByIndex(String itemNumber){
         resultsPage.clickOnItem(itemNumber);
-        System.out.println("Termine de hacer click en el item");
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
     }
 
     @Then("^assert that the item would be available for purchase$")
     public void verifyRules(){
         Assert.assertNotEquals(itemPage.getAddToCartSize(), 0); //Verify size of driver find elements of "Add to cart" is greather than zero (defect value)
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
         itemPage.addItemToCart(); //Add item to cart
+        System.out.println("Ya hice click en el carrito");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
